@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/daftar.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Daftar Member</title>
+
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../img/logo2.png" height="60px" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="../buat-art/buat.html">Buat Art</a></li>
+                <li><a href="../arts/artist.html">Arts</a></li>
+            </ul>
+        </nav>
+        <a href="view/login_register/login.html" target="_blank"><button>Login</button></a>
+    </header>
+    <div id="daftar">
+        <div class="home">
+            <div class="sales-boxes">
+                <h1>Pendaftaran Member Artzy</h1>
+                <div class="content">
+                    <form action="index.html">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Nama</span>
+                                <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Member</span>
+                                <select class="select" name="member" id="member" required>
+                                    <option value="gld">Gold</option>
+                                    <option value="plt">Platinum</option>
+                                    <option value="dm">Diamond</option>
+                                </select>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email</span>
+                                <input type="email" name="email" id="email" placeholder="Masukkan Email" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Nomor HP</span>
+                                <input type="text" pattern=”[0-9]” name="nomor" id="nomor" placeholder="Masukkan Nomor HP" required>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box2">
+                                <span class="details">Masukan untuk Artzy</span>
+                                <textarea type="text" name="masukan" id="masukan" placeholder="Masukkan Untuk Artzy" 
+                                            rows="0"
+                                            cols="0"required>
+                                </textarea>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Kategori Art yang disukai</span>
+                                <div class="topp">
+                                    <input type="checkbox" class="checkbox" type="checkbox" id="fan-art" name="art[]" value="fan-art">
+                                    <label class="check" for="fan-art">Fan-art</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="checkbox" type="checkbox" id="cosplay" name="art[]" value="cosplay">
+                                    <label class="check" for="cosplay">Cosplay</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="checkbox" type="checkbox" id="manga" name="art[]" value="manga">
+                                    <label class="check" for="manga">Manga</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="checkbox2" type="checkbox" id="anime" name="art[]" value="anime">
+                                    <label class="check" for="anime">Anime</label>
+                                </div>
+                            </div>
+                        </div>         
+                        <div class="input-box">
+                            <input type="radio" name="share" id="dot-1" value="yes">
+                            <input type="radio" name="share" id="dot-2" value="no">
+                            <br>
+                            <span class="details">Apakah kamu memiliki banyak arts untuk dibagikan?</span>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="share">Iya</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="share2">Tidak</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button3">
+                            <label class="button2">
+                                <input type="submit" value="Batal">
+                            </label>
+                            <label>
+                                <input type="button" value="Save" onclick="saveData()">
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <footer>
+        <hr>
+        <div class="foot">
+            <p>2023 Copyright Fazry</p>
+            <p>Support by Yotsuba</p>
+        </div>
+    </footer>
+</body>
+<!-- <script src="js/file_input.js"></script>
+<script src="js/scroll-down.js"></script> -->
+<script src="../js/daftar.js"></script>
+</html>

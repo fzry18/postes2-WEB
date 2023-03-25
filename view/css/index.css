@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFB26B;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    
+} 
+
+.nav-bar {
+    top: 0;
+    left: 0;
+    background-color: hsl(0, 0%, 95%);
+    position: fixed;
+    display: flex;
+    padding: 0.5rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 1px 10px #999999;
+    z-index: 1;
+  }
+  
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #FFB26B;
+    box-shadow: 0px 1px 10px #999999;
+    z-index: 100;
+
+}
+
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links{
+    list-style: none;
+    padding-left: 50px;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 30px;
+    margin-right: auto;
+    font-size: medium;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #FF7B54;
+}
+
+
+button{
+    padding: 9px 25px;
+    background-color: #FF6E31;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #FF6E31(0,136,169,0.8);
+}
+
+
+.about-img{
+    position: relative;
+
+}
+
+.daftar{
+    top: 33%;
+    left: 8%;
+    position: absolute;
+}
+.daftar .satu{
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 501;
+}
+.daftar .dua{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+.button{
+    padding:2% 0px 0px 0%;
+    text-decoration: none;
+}
+.button a{
+    text-align: left;
+    text-decoration: none;
+    border: none;
+    font-size: 22px;
+    color: #FFF;
+    padding: 10px 13px;
+    background-color: #EA5C2B;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button a:hover{
+    text-align: left;
+    background-color: rgb(177, 0, 222);
+    font-size: 28px;
+    transition: 0.4s;
+}
+
+.judul{
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+
+#content {
+    text-align: center;
+    padding: 120px 2px 120px 0px;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    background-color: #FFB26B;
+}
+
+.kiri{
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.kiri img{
+    padding-left: 81px;
+}
+
+.kanan{
+    display: inline-block;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 120px;
+    padding-top: 50px;
+}
+.kanan img{
+    padding-right: 81px;
+}
+.jarak{
+    padding-top: 9%;
+    text-align: center;
+    font-size: 23px;
+}
+.home{
+    padding: 140px 180px 0px 180px;
+}
+
+footer{
+    background-color: rgb(225, 225, 225);
+}
+footer .foot{
+    padding: 25px 0px 25px 80px;
+}

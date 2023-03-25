@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menampilkan Data dari Session Storage ke dalam List HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/daftar.css">
+    <link rel="stylesheet" href="../css/tampil-daftar.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header>
+        <a href="../../index.html"><img src="../img/logo2.png" height="60px" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="../buat-art/buat.html">Buat Art</a></li>
+                <li><a href="../arts/artist.html">Arts</a></li>
+            </ul>
+        </nav>
+        <a href="view/login_register/login.html" target="_blank"><button>Login</button></a>
+    </header>
+    
+    <h1>Form Daftar</h1>
+    <div class="sales-boxes">
+    <ul id="data-list" class="data-list"></ul>
+    </div>
+
+    
+  <script>
+    var data = JSON.parse(sessionStorage.getItem("data"));
+    var list = document.getElementById("data-list");
+
+    for (var key in data) {
+      var item = document.createElement("li");
+      item.appendChild(document.createTextNode(key + ": " + data[key]));
+      list.appendChild(item);
+    }
+  </script>
+</body>
+
+<script src="../js/daftar.js"></script>
+</html>
